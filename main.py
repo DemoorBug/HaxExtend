@@ -232,9 +232,9 @@ if __name__ == '__main__':
     # driver.switch_to.default_content()
     time.sleep(10)
     print('fill username')
-    driver.find_element(By.XPATH, '//*[@id="text"]').send_keys(USERNAME)
+    driver.find_element(By.XPATH, '//input[@id="text"]').send_keys(USERNAME)
     print('fill password')
-    driver.find_element(By.XPATH, '//*[@id="password"]').send_keys(PASSWORD)
+    driver.find_element(By.XPATH, '//input[@id="password"]').send_keys(PASSWORD)
     delay()
 
     # reCAPTCHA
